@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- head
+
+        Purpose: 
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+        -->
+        <title>Night of Light</title>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+        
+        <link rel="stylesheet" href="styles.css">
+
+            </head>
+    
+    <body>
+        
+        <!-- Background Music -->
+    <audio autoplay loop>
+        <source src="./img/web-audio.mp3" type="audio/mpeg">
+    </audio>
+        
+    
+<!-- navbar
+
+Purpose:
+- Navigation bar that allows users to jump to different sections of the webpage
+- Also holds buttons for user settings (dark mode, reduce motion)
+
+-->
+
+<div class="navbar">
+    <ul class="nav-links">
+      <li><a href="#header-item">Home</a></li>
+      <li><a href="#About_Festival">About</a></li>
+      <li><a href="#Schedule">Schedule</a></li>
+      <li><a href="#Links">Links</a></li>
+    </ul>
+    <button id="theme-toggle" class="header-button">Light Mode</button>
+  </div>
+    
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        -->
+<div class="header-container">
+    <!-- Left Section -->
+    <div id="header-item">
+        <img id="header-img" src="./img/header-image.png" alt="Night of Light">
+    </div>
+
+    <!-- Right Section -->
+    <div id="header-item">
+        <h1>Night of Light: Lantern Festival</h1>
+        <h2>A Night of Wishes, A Sky of Dreams</h2>
+        <div class="button-container">
+            <button class="header-button">Join the Festival</button>
+            <button class="header-button">Learn More</button>
+        </div>
+    </div>
+</div>
+       
+
+        
+        <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        --> 
+        <section class="about-festival">
+            <div class="festival-content">
+                <h2 id="About_Festival">About the Festival</h2>
+                <p><em><b>A Night Where Dreams Take Flight.</b></em></p> <!-- Italicized -->
+                <p>
+                        As darkness falls, thousands of glowing lanterns rise, carrying wishes, dreams, and love into the sky. Night of Light is a magical celebration of hope and togetherness, inspired by the timeless tradition of floating lanterns.
+                        
+                        Personalize your lantern, release it into the night, and watch as the sky fills with golden light. Enjoy live music, performances, food, and art in an atmosphere of wonder and joy.
+                        
+                        Join us for an unforgettable evening where the night glows with dreams and endless possibilities.
+                    </p>
+                    <button type="button" class="center-button">Learn More</button>
+
+                </div>
+            <div class="festival-image">
+                <img src="./img/about-image.png" alt="Lantern Festival">
+            </div>
+        </section>
+        
+
+        <h2 id="Schedule" >What to Expect</h2>
+        <h4>Prepare for an unforgettable evening filled with glowing lanterns, captivating performances, and opportunities to create lasting memories. Here's a glimpse of the magical experiences waiting for you...</h4>
+        
+        <ul>
+            <li><strong>The Grand Lantern Release</strong> – Personalize your lantern and release it into the sky.</li>
+            <li><strong>Live Music & Performances</strong> – Enjoy enchanting performances from musicians and dancers.</li>
+            <li><strong>Food & Artisan Market</strong> – Indulge in delicious food and explore handcrafted goods.</li>
+            <li><strong>Lantern-Making & Calligraphy Workshops</strong> – Create and personalize your own lantern.</li>
+            <li><strong>Breathtaking Photo Opportunities</strong> – Capture stunning moments under the lantern-lit sky.</li>
+            <li><strong>Candlelight Paths & Light Installations</strong> – Wander through glowing displays.</li>
+            <li><strong>Countdown to the Lantern Release</strong> – Feel the anticipation as we prepare for the big moment.</li>
+            <li><strong>A Night of Wonder & Connection</strong> – Celebrate hope, love, and dreams taking flight.</li>
+        </ul>
+                
+
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+        --> 
+        <h2>Event Schedule</h2>
+
+        <img alt="" src="./img/lantern-liftoff.png"/>
+        <h3>Lantern Lift-Off: The Grand Lantern Release</h3>
+        <p>The highlight of the Night of Light Festival, the Grand Lantern Release is an awe-inspiring spectacle. Attendees are invited to personalize their lanterns with wishes, dreams, and messages of hope before sending them into the night sky. As thousands of lanterns float upwards, the sky transforms into a glowing sea of light, creating an unforgettable moment of magic and togetherness.
+        </p>
+            
+        <img alt="" src="./img/crafting-the-glow.png"/>
+        <h3>Crafting the Glow: Lantern-Making Workshop</h3>
+        <p>Unleash your creativity at the Lantern-Making Workshop! In this hands-on activity, festival-goers can design and craft their very own lanterns using a variety of materials, from colorful paper to decorative embellishments. Local artisans will guide you through the process, sharing tips on calligraphy, painting, and customizing your lantern with personal messages or symbols. Once finished, you can release your creation into the sky during the Grand Lantern Release!
+        </p>
+
+        <img alt="" src="./img/rhythms-of-light.png"/>
+        <h3>Rhythms of Light: Live Music & Dance</h3>
+        <p>Immerse yourself in the festival’s vibrant atmosphere with live performances throughout the evening. Enjoy a mix of traditional and modern music, as well as cultural dance performances that celebrate the diversity and beauty of the community. The performances are designed to complement the glowing lanterns, with musicians playing soothing melodies and dancers showcasing elegant moves that reflect the theme of light and hope. Feel the energy and magic of the night come alive through music and dance!
+        </p>
+
+<!-- rsvp
+
+Purpose:
+- Section for users to sign up for the event
+- Contains a form for users to input their information, 
+and a list of other users who have signed up
+
+--> 
+<div id="rsvp">
+    <h2>RSVP</h2>
+    <div class="rsvp-container">
+        <div class="rsvp-para">
+            <p>Want to be part of a night to remember? Sign up below to reserve your lantern and be part of the magic!</p>
+        </div>
+        <div class="rsvp-participants">
+            <p>🎟️ DJ from Texas has RSVP'd.</p>
+            <p>🎟️ Amy from New York has RSVP'd.</p>
+            <p>🎟️ Teresa from Montana has RSVP'd.</p>
+        </div>
+    </div>
+
+    <!--- Sign RSVP Form --->
+    <div class="form-container">
+        <form id="rsvp-form" title="rsvp-form" class="rsvp-flex">
+            <div class="form-field">
+              <label for="rsvp-name">Name:</label>
+              <input type="text" id="rsvp-name" name="rsvp-name">
+            </div>
+          
+            <div class="form-field">
+              <label for="rsvp-email">Email:</label>
+              <input type="email" id="rsvp-email" name="rsvp-email">
+            </div>
+          
+            <div class="form-field">
+              <label for="rsvp-state">State:</label>
+              <input type="text" id="rsvp-state" name="rsvp-state">
+            </div>
+                         <!-- Submit button -->
+            <div class="form-field">
+              <button id="rsvp-button">Submit RSVP</button>
+            </div>
+          </form>
+    </div>      
+</div>
+
+<div id="success-modal" class="modal">
+    <div class="modal-container">
+      <div id="modal-item">
+        <p id="modal-text">Thanks for RSVPing!</p>
+      </div>
+      <div id="modal-item">
+        <img id="modal-image" src="./img/header-image.png" alt="Celebration Image" />
+    </div>
+    </div>
+  </div>
+  
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        --> 
+        
+
+        <h2 id="Links" >Links</h2>
+
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+        <a class="block" href="https://www.nightlightsevent.com/schedule?fbclid=PAZXh0bgNhZW0CMTEAAaZeq1Zglw9Ym3B-cW1dvfQpCa9Ukh4AxFIuQlFxeAIJQDgRb_kWkxrh3H0_aem_dNwJeOuU5iHydd_YfwLIiQ">
+            <article>
+                <h3>Tickets</h3>
+                <p>Your tickets are waiting!</p>
+            </article>
+        </a>
+        <a class="block" href="https://www.instagram.com/nightlightsevent/">
+            <article>
+                <h3>Socials</h3>
+                <p>Check us out on instagram!</p>
+            </article>
+        </a>
+            
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+        <script src="index.js"></script>
+
+    </body>
+</html>

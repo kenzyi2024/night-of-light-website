@@ -1,0 +1,436 @@
+/*** VSCodeEDU preview fix 
+
+  Purpose:
+  - Fix VSCodeEDU issue that causes a white border to show around
+    the preview window
+***/
+html {
+  background-color: #070709; /* Sets the background color */
+}
+
+.about-festival{
+  margin-top: 50px;
+}
+
+/*** body ***
+  
+  Purpose:
+  - Add style rules for the body of your webpage
+  - This is useful if you want a rule to apply to EVERYTHING on your page
+
+***/
+
+body {
+  background-color: #070709; /* Sets the background color */
+  color: #f0edea; /* Optional: makes text readable */
+  margin: 0;
+  padding: 20px; /* This adds space around all sides of the page */
+  font-family: Segoe UI;
+}
+
+/*** Text ***
+  
+  Purpose: 
+  - Add style rules for headings (h1-6),
+    paragraphs (p), links (a), and buttons
+
+***/
+
+h1, h2, h4 {
+  text-align: center;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-shadow: 2px 2px 5px rgb(255, 166, 0); /* Glowing text effect */
+
+}
+
+a:link {
+  color: #e88625;
+}
+
+a:hover {
+  color: #f0e90b;
+}
+
+a:visited {
+  color: #dc7814;
+}
+
+a:active {
+  color: #ff5722;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1a1a2e;
+  background: linear-gradient(45deg, #e88625, #ffcc00);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
+  margin: 5px;
+}
+
+/* Hover effect for all buttons */
+button:hover {
+  background: linear-gradient(45deg, #ffcc00, #e88625);
+  transform: scale(1.05);
+}
+
+
+
+/*** header ***
+  
+  Purpose:
+  - Add style rules for your website's header section
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/* Header Container Ruleset (Flexbox) */
+.header-container {
+  display: flex; /* Enable flexbox */
+  flex-direction: row; /* Arrange items in a row (side-by-side) */
+  align-items: center; /* Vertically center items */
+  justify-content: center; /* Center items horizontally */
+  padding-top: 40px; /* Space above the header */
+  margin-top: 20px; /* Space from the top of the page */
+  margin-bottom: 30px; /* Space below the header */
+  text-align: center; /* Center the text within the container */
+  width: 100%; /* Make sure the container spans the full width */
+}
+
+/* Header Left and Right (Flexbox adjustments) */
+.header-item:nth-of-type(1), .header-item:nth-of-type(2) {
+  width: 60%; /* Set each to take up 40% of the container */
+  text-align: center; /* Centers text inside */
+}
+
+
+/* Header Image Ruleset */
+.header-img {
+  margin-left: 20px; /* Adds margin to the left of the image */
+  margin-right: 20px; /* Adds margin to the right of the image */
+  width: 100%; /* Makes the image responsive */
+  max-width: 600px; /* Max width of the image */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain; /* Ensures the image scales appropriately */
+}
+
+/* Header Button Ruleset */
+.header-button {
+  background-color: #e88625; /* Custom background color for buttons */
+  color: #1a1a2e; /* White text for contrast */
+  font-size: 18px; /* Font size for readability */
+  text-align: center; /* Centers text inside the button */
+  padding: 15px 30px; /* Adds padding for better button sizing */
+  margin: 10px; /* Adds space between buttons */
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor to indicate clickable button */
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for hover */
+}
+
+/* Hover Effect for Header Button */
+.header-button:hover {
+  background-color: #ffffff; /* Lighter yellow color on hover */
+  transform: scale(1.1); /* Slight scaling effect to emphasize the button */
+}
+
+
+/*** footer ***
+  
+  Purpose:
+  - Add style rules for your website's footer section
+
+  When To Modify:
+  - [ ] Project 3 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+
+/*** Navigation bar (navbar) ***
+  
+  Purpose:
+  - Add style rules for your website's navbar
+***/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #070709; /* Match your background */
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #e88625;
+  padding: 10px 15px;
+}
+
+.nav-links li a:hover {
+  background-color: #e88625;
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+/* Light mode override styles */
+body.light-mode {
+  background-color: #f0edea;
+  color: #1a1a2e;
+}
+
+body.light-mode a {
+  color: #1a1a2e;
+}
+
+body.light-mode .navbar {
+  background-color: #f0edea; /* Light mode background for navbar */
+}
+
+body.light-mode .nav-links li a {
+  color: #1a1a2e; /* Change link text to dark color for better visibility */
+}
+
+body.light-mode .nav-links li a:hover {
+  background-color: #ffe08a;
+  color: #1a1a2e;
+}
+
+
+/*** About Section ***
+  
+  Purpose:
+  - Add style rules for your website's About section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.about-festival {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.festival-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.festival-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2); /* Soft glow effect */
+
+}
+
+iframe {
+  display: block;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 560px;
+  height: 315px;
+}
+
+
+
+/*** Schedule Section ***
+  
+  Purpose:
+  - Add style rules for your website's Schedule section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** Links Section ***
+  
+  Purpose:
+  - Add style rules for your website's Links section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** RSVP Section ***
+  
+  Purpose:
+  - Add style rules for your website's RSVP form
+
+  When To Modify:
+  - [ ] Project 6 (REQUIRED FEATURE)
+  - [ ] Project 7 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.rsvp-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+/* Add other rsvp-related selectors here */
+
+.rsvp-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-end;
+  flex-wrap: wrap; /* Optional: wraps nicely on smaller screens */
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.rsvp-para {
+  width: 55%;
+  padding-right: 10px;
+}
+
+.rsvp-participants {
+  width: 45%;
+  padding-right: 10px;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.error {
+  border: 2px solid red;
+  background-color: #ffcccc;
+
+  /* Set border-color and background */
+}
+
+
+
+/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  opacity: 0;
+  transition: opacity 0.5s ease;
+    
+}
+
+.modal-container {
+  padding: 50px;
+  width: 55%;
+  background-color: rgb(5, 33, 69);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1rem;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#modal-item img {
+  width: 150px;
+  height: auto;
+  margin-top: 20px;
+}
+
+  /* When you show the modal (in JS), add a class like 'show' */
+  .modal.show {
+    opacity: 1;
+    display: flex;
+  }
+
+
+/*** Custom Colors (OPTIONAL) ***
+  
+  Purpose:
+  - Use CSS variables to define custom colors for your website
+  - To get you started, we've provided the color scheme used in our example site.
+  - To reference a color variable in your css, use var(--variable-name) in place of a color value
+
+***/
+
+:root {
+    /* Light Mode */
+    --bg-color: #a6a0cf;
+    --text-color: #231942;
+
+    /* Dark Mode */
+    --bg-color-dark-mode: #3e3377;
+    --text-color-dark-mode: #fff;
+
+    /* Accent Colors */
+    --accent-color-light: #d2cff5;
+    --accent-color-medium: #684fb5;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}
